@@ -1,29 +1,16 @@
-import './App.css';
+import React from 'react'
 import {
   BrowserRouter as Router, 
   Routes,
   Route
 } from 'react-router-dom'
-<<<<<<< HEAD
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 import Layout from './layout/Layout'
 import Home from './components/pages/Home'
 import LogIn from './components/pages/LogIn'
 import SignUp from './components/pages/SignUp'
 
-function App() {
-  return (
-    <div className="body-wrap" id="root">
-      <Router>
-        <Layout>
-          <Routes>
-            <Route path={'/LogIn'} component={LogIn}></Route>
-            <Route path={'/SignUp'} component={SignUp}></Route>
-=======
-
-import Layout from './layout/Layout'
-import Home from './components/pages/Home'
+import './App.css';
 
 function App() {
   return (
@@ -31,7 +18,8 @@ function App() {
       <Router>
         <Layout>
           <Routes>
->>>>>>> Master
+            <Route path={'/LogIn'} component={LogIn}></Route>
+            <Route path={'/SignUp'} component={SignUp}></Route>
             <Route path={'/'} component={Home}></Route>
           </Routes>
         </Layout>
